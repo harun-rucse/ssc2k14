@@ -4,7 +4,7 @@ import { MdContentCopy, MdCall } from 'react-icons/md';
 import toast from 'react-hot-toast';
 
 const Card = ({ friend }) => {
-	const { name, phone } = friend;
+	const { name, phone, bloodGroup } = friend;
 
 	const handleCopy = () => {
 		navigator.clipboard.writeText(phone);
@@ -16,7 +16,10 @@ const Card = ({ friend }) => {
 			<div className='contact-wrapper'>
 				<LetteredAvatar name={name} />
 				<div>
-					<h4 className='name'>{name}</h4>
+					<div className='nameWrapper'>
+						<h4 className='name'>{name}</h4>
+						<div className='bgroup'>{bloodGroup}</div>
+					</div>
 					<div className='numberWrapper'>
 						<p className='number'>{phone}</p>
 						<MdContentCopy

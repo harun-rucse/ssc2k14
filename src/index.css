@@ -51,9 +51,27 @@ body {
 	border-radius: 50%;
 }
 
+.nameWrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.bgroup {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #e04f3f;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
 .name {
 	font-size: 20px;
-	margin-bottom: 8px;
 }
 
 .numberWrapper {
